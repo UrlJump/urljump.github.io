@@ -4,6 +4,18 @@
 <meta charset="UTF-8">
 </head>
 <body>
-<script>location.href= "https://www.lanzous.com/u/gdsgjcb" </script>
+    <iframe src="https://www.lanzous.com/u/gdsgjcb" id="iframepage" scrolling="no" onload="changeFrameHeight()" frameborder="0"></iframe>
+    <script>
+    	function changeFrameHeight() {
+    		var ifm = document.getElementById("iframepage");
+    		ifm.height = document.documentElement.clientHeight;
+    		ifm.width = document.documentElement.clientWidth;
+    	}
+
+    	window.onresize = function() {
+    		changeFrameHeight();
+
+    	} 
+    </script>
 </body>
 </html>
